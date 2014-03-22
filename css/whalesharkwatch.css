@@ -1,0 +1,25 @@
+html, body, #main, #map_canvas, #sidebar_twitter {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#sidebar {
+	height: 100%;
+}
+
+#main {
+	padding-top: 51px;
+}
+
+#twitter-widget-0 {
+	height: 100%;
+	max-height: 100%;
+}
+
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+	margin-right: 0px;
+}
+
