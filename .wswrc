@@ -1,0 +1,14 @@
+[twitter]
+consumer_key = foo
+consumer_secret = foo
+api_key = foo
+api_secret = foo
+hashtags = whaleshark
+twitter_status = The whale shark SHARK_NAME just moved to LAT, LON. Check it out at http://www.whalesharkwatch.org/ %(hashtags)s
+
+[argos]
+argos_username = foo
+argos_password = foo
+program_id = 9999
+platforms = 1234, 5678, 9876
+
