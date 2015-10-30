@@ -2,8 +2,8 @@
 #
 # Example code derived from:
 #
-#    https://dev.twitter.com/docs/auth/oauth/single-user-with-examples#python
-#    https://github.com/brosner/python-oauth2
+#    https://dev.twitter.com/oauth/overview/single-user
+#    https://github.com/joestump/python-oauth2
 #
 
 import argos
@@ -24,7 +24,6 @@ def oauth_req(url, key, secret, http_method="GET", post_body=None, http_headers=
         method=http_method,
         body=post_body,
         headers=http_headers,
-        force_auth_header=True
         )
     return content
  
