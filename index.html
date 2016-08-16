@@ -19,7 +19,7 @@
 
         var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-        var ctaLayer = new google.maps.KmlLayer("http://www.whalesharkwatch.org/data/4276.kml?rand="+(new Date()).valueOf());
+        var ctaLayer = new google.maps.KmlLayer("https://s3-eu-west-1.amazonaws.com/wsw-data/4276.kml?rand="+(new Date()).valueOf());
         ctaLayer.setMap(map);
       }
     </script>
