@@ -108,15 +108,14 @@ current_loc = argos.get_current_location(argos_username, argos_password, platfor
 current_lat = current_loc[1]
 current_lon = current_loc[2]
 
-section_name = "platform_" + str(platform_id)
-twitter_status = CONFIG.get(section_name, "twitter_status")
-twitter_request = encode_status (twitter_status, current_lat, current_lon)
-
 if (cmp(last_loc, current_loc) == 0):
     print "[*] " + platform_name + " (" + str(platform_id) + "):\tno update"
 else:
     print "[*] " + platform_name + " (" + str(platform_id) + "):\tlocation has changed"
     save_location(platform_id, current_loc[0], current_loc[1], current_loc[2])
+    section_name = "platform_" + str(platform_id)
+    twitter_status = CONFIG.get(section_name, "twitter_status")
+    twitter_request = encode_status (twitter_status, current_lat, current_lon)
     print "[+] last loc:\t" + str(last_loc)
     print "[+] current loc:\t" + str(current_loc)
     print twitter_status
